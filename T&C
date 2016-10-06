@@ -1,0 +1,45 @@
+drink=input("What would you like to drink? (Tea, Coffee or Milk): ")
+
+if drink =='Tea':
+    price_of_tea=input("Price of Half Tea:$7\nPrice of Full Tea:$12\n\nWhich one would you like? [Half or Full]:")
+    if price_of_tea == 'Half':
+        print("Your order has been placed\nKindly keep $7 ready!")
+    elif price_of_tea == 'Full':
+        print("Your order has been placed\nKindly keep $12 ready!")
+if drink=='Coffee':
+    price_of_coffee = input("Price of Half Coffee:$10\nPrice of Full Tea:$18\n\nWhich one would you like? [Half or Full]:")
+    if price_of_coffee == 'Half':
+        print("Your order has been placed\nKindly keep $10 ready!")
+    elif price_of_coffee == 'Full':
+        print("Your order has been placed\nKindly keep $18 ready!")
+if drink=='Milk':
+    print("Your order for a glass of Milk has been placed\nKindly keep $5 ready!")
+
+check=input("Do you want something else? [Yes or No]: ")
+
+if check=='Yes':
+    drink = input("What would you like to drink? (Tea, Coffee or Milk): ")
+
+    if drink == 'Tea':
+        price_of_tea = input("Price of Half Tea:$7\nPrice of Full Tea:$12\n\nWhich one would you like? [Half or Full]:")
+        if price_of_tea == 'Half':
+            print("Your order has been placed\nKindly keep $7 ready!")
+        elif price_of_tea == 'Full':
+            print("Your order has been placed\nKindly keep $12 ready!")
+    if drink == 'Coffee':
+        price_of_coffee = input(
+            "Price of Half Coffee:$10\nPrice of Full Tea:$18\n\nWhich one would you like? [Half or Full]:")
+        if price_of_coffee == 'Half':
+            print("Your order has been placed\nKindly keep $10 ready!")
+        elif price_of_coffee == 'Full':
+            print("Your order has been placed\nKindly keep $18 ready!")
+    if drink == 'Milk':
+        print("Your order for a glass of Milk has been placed\nKindly keep $5 ready!")
+
+    check = input("Do you want something else? [Yes or No]: ")
+    if check == 'Yes':
+        drink = input("What would you like to drink? (Tea, Coffee or Milk): ")
+    elif check == 'No':
+        print("Thank you for visiting Kallu Chai Stall.\nPlease visit us again!")
+elif check=='No':
+    print("Thank you for visiting Kallu Chai Stall.\nPlease visit us again!")
